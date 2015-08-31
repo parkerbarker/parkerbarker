@@ -1,0 +1,20 @@
+<div class="container-fluid fill clickable" ng-controller="HomeCtrl">
+  <div class="row fill">
+    <div class="col-xs-12 col-md-6 fill no-spacing hoverLogo"
+         ng-click="changeView('{{ hayley.url }}')"
+         ng-mouseover="hoverIn(hayley)"
+         ng-mouseleave="hoverOut(hayley)"
+         background-image="{{ hayley.image }}">
+      <img class="pull-right no-spacing svg" ng-src="{{hayley.logoImage}}" alt="{{hayley.name}}"/>
+    </div>
+    <div class="col-xs-12 col-md-6 fill no-spacing hoverLogo"
+         ng-click="changeView('{{ cameron.url }}')"
+         ng-mouseover="hoverIn(cameron)"
+         ng-mouseleave="hoverOut(cameron)"
+         background-image="{{ cameron.image }}">
+      <img class="pull-left no-spacing" ng-src="{{cameron.logoImage}}" alt="{{cameron.name}}"/>
+    </div>
+  </div>
+
+
+</div>
