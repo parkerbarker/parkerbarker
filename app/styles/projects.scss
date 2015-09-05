@@ -1,16 +1,10 @@
 .project-wrapper{
   ul.projects{
     li{
-      width: 30%;
       padding: 10px 5px;
-    }
-  }
-  .modal{
-    .modal-body{
-      img{
-        // width: 100%;
+      @include respond-to(xs) {
+        width: 50%;
       }
     }
   }
-
 }
