@@ -11,7 +11,7 @@ angular.module('parkerBarkerApp')
   .controller('HomeCtrl', function ($scope, $location) {
     $scope.cameron = {
       name: "barker",
-      image: "images/portrait/him-min.jpg",
+      image: "images/portrait/him-anon-min.jpg",
       logoImage: "images/logo/barker-min.png",
       logoOriginal: "images/logo/barker-min.png",
       logoHover: "images/logo/barker-white-min.png",
@@ -19,7 +19,7 @@ angular.module('parkerBarkerApp')
     };
     $scope.hayley = {
       name: "parker",
-      image: "images/portrait/her-min.jpg",
+      image: "images/portrait/her-anon-min.jpg",
       logoImage: "images/logo/parker-min.png",
       logoOriginal: "images/logo/parker-min.png",
       logoHover: "images/logo/parker-white-min.png",
