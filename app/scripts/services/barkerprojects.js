@@ -9,7 +9,7 @@
  */
 angular.module('parkerBarkerApp')
   .service('barkerProjects', function ($http) {
-    return $http.get('data/projects.json')
+    return $http.get('https://raw.githubusercontent.com/parkerbarker/parkerbarker/master/app/data/projects.json')
        .success(function(data) {
          return data;
        })

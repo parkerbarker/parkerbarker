@@ -9,7 +9,7 @@
  */
 angular.module('parkerBarkerApp')
   .service('barkerSkills', function ($http) {
-    return $http.get('data/skills.json')
+    return $http.get('https://raw.githubusercontent.com/parkerbarker/parkerbarker/master/app/data/skills.json')
        .success(function(data) {
          return data;
        })
