@@ -1,1 +1,82 @@
-<p>This is the barker view.</p>
+<div class="container-fluid">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-xs-12 col-sm-3 text-right">
+      <h1>Cameron Barker</h1>
+      <a href="mailto:barker.cameron@gmail.com">barker.cameron@gmail.com</a>
+
+      <h4>Languages:</h4>
+      <ul>
+        <li ng-repeat="language in languages">{{ language }}</li>
+      </ul>
+      <h4>Frameworks:</h4>
+      <ul>
+        <li ng-repeat="framework in frameworks">{{ framework }}</li>
+      </ul>
+      <h4>Databases:</h4>
+      <ul>
+        <li ng-repeat="database in databases">{{ database }}</li>
+      </ul>
+      <h4>Learning:</h4>
+      <ul>
+        <li ng-repeat="learn in learning">{{ learn }}</li>
+      </ul>
+      <h4>Applications:</h4>
+      <ul>
+        <li ng-repeat="application in applications">{{ application }}</li>
+      </ul>
+      <h4>Education:</h4>
+      <ul>
+        <li ng-repeat="edu in education">{{ edu }}</li>
+      </ul>
+      <h4>Interests:</h4>
+      <ul>
+        <li ng-repeat="interest in interests">{{ interest }}</li>
+      </ul>
+      <h4>Favorite Saying:</h4>
+      <p>{{ mission }}</p>
+      <h4>Personal Goals:</h4>
+      <p>{{ personal_goals }}</p>
+    </div>
+
+    <!-- Body -->
+    <div class="col-xs-12 col-sm-9">
+      <ul class="inline projects">
+        <li ng-repeat="project in projects | orderBy:'position':false" class="clickable">
+          <a class="" data-toggle="modal" ng-click="updateModal(project)" data-target="#myModal">
+            <img ng-src="{{ project.poster }}" alt="{{project.title}}" class="img-responsive" />
+            <!-- {{project.title}} -->
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">{{ modal.title }}</h4>
+          <a ng-href="{{ modal.url }}">{{ modal.url }}</a>
+        </div>
+        <div class="modal-body" style="height: 300px;">
+          <carousel interval="myInterval">
+            <slide ng-repeat="slide in modal.slides" active="slide.active">
+              <img ng-src="{{slide.image}}">
+              <div class="carousel-caption">
+                <h4>Slide {{$index+1}}</h4>
+              </div>
+            </slide>
+          </carousel>
+        </div>
+        <div class="modal-footer row">
+          <div class="col-sm-12 text-left">
+            <p>{{ modal.description }}</p>
+            <h3>Language/Skill</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

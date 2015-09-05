@@ -16,7 +16,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.sortable'
+    'ui.sortable',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
@@ -49,7 +50,7 @@ angular
         redirectTo: '/'
       });
 
-      if(window.history && window.history.pushState){
+      if(window.history && window.history.pushState && true === false){
         $locationProvider.html5Mode(true);
       }
   });
