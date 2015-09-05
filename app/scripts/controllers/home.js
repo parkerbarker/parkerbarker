@@ -23,10 +23,13 @@ angular.module('parkerBarkerApp')
       logoImage: "images/logo/parker-min.png",
       logoOriginal: "images/logo/parker-min.png",
       logoHover: "images/logo/parker-white-min.png",
-      url: "parker",
+      url: "http://www.culdesackid.com",
     };
     $scope.changeView = function(view){
       $location.path(view); // path not hash
+    };
+    $scope.changeLocation = function(view){
+      window.location.href = view; // path not hash
     };
     $scope.hoverIn = function(obj){
       obj.logoImage = obj.logoHover;
