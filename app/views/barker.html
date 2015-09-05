@@ -4,44 +4,51 @@
     <div class="col-xs-12 col-sm-3 text-right">
       <h1>Cameron Barker</h1>
       <a href="mailto:barker.cameron@gmail.com">barker.cameron@gmail.com</a>
-
-      <h4>Languages:</h4>
-      <ul>
-        <li ng-repeat="language in skills.languages">{{ language }}</li>
-      </ul>
-      <h4>Frameworks:</h4>
-      <ul>
-        <li ng-repeat="framework in skills.frameworks">{{ framework }}</li>
-      </ul>
-      <h4>Databases:</h4>
-      <ul>
-        <li ng-repeat="database in skills.databases">{{ database }}</li>
-      </ul>
-      <h4>Learning:</h4>
-      <ul>
-        <li ng-repeat="learn in skills.learning">{{ learn }}</li>
-      </ul>
-      <h4>Applications:</h4>
-      <ul>
-        <li ng-repeat="application in skills.applications">{{ application }}</li>
-      </ul>
-      <h4>Education:</h4>
-      <ul>
-        <li ng-repeat="edu in skills.education">{{ edu }}</li>
-      </ul>
-      <h4>Interests:</h4>
-      <ul>
-        <li ng-repeat="interest in skills.interests">{{ interest }}</li>
-      </ul>
-      <h4>Favorite Saying:</h4>
-      <p>{{ skills.mission }}</p>
-      <h4>Personal Goals:</h4>
-      <p>{{ skills.personal_goals }}</p>
+      <div class="skills" ng-if="skillsLoading">
+        Loading Skills...
+      </div>
+      <div class="skills" ng-if="!skillsLoading">
+        <h4>Languages:</h4>
+        <ul>
+          <li ng-repeat="language in skills.languages">{{ language }}</li>
+        </ul>
+        <h4>Frameworks:</h4>
+        <ul>
+          <li ng-repeat="framework in skills.frameworks">{{ framework }}</li>
+        </ul>
+        <h4>Databases:</h4>
+        <ul>
+          <li ng-repeat="database in skills.databases">{{ database }}</li>
+        </ul>
+        <h4>Learning:</h4>
+        <ul>
+          <li ng-repeat="learn in skills.learning">{{ learn }}</li>
+        </ul>
+        <h4>Applications:</h4>
+        <ul>
+          <li ng-repeat="application in skills.applications">{{ application }}</li>
+        </ul>
+        <h4>Education:</h4>
+        <ul>
+          <li ng-repeat="edu in skills.education">{{ edu }}</li>
+        </ul>
+        <h4>Interests:</h4>
+        <ul>
+          <li ng-repeat="interest in skills.interests">{{ interest }}</li>
+        </ul>
+        <h4>Favorite Saying:</h4>
+        <p>{{ skills.mission }}</p>
+        <h4>Personal Goals:</h4>
+        <p>{{ skills.personal_goals }}</p>
+      </div>
     </div>
 
     <!-- Body -->
     <div class="col-xs-12 col-sm-9">
-      <ul class="inline projects">
+      <div ng-if="projectsLoading">
+        Loading Projects...
+      </div>
+      <ul class="inline projects" ng-if="!projectsLoading">
         <li ng-repeat="project in projects | orderBy:'position':false" class="">
             <a ng-href="{{project.url}}" ng-if="project.url" target="_blank">
               <img ng-src="{{ project.poster }}" alt="{{project.title}}" class="img-responsive" />

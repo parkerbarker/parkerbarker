@@ -9,10 +9,15 @@
  */
 angular.module('parkerBarkerApp')
   .controller('BarkerCtrl', function ($scope, barkerProjects, barkerSkills) {
-    barkerProjects.success(function(data) {
-      $scope.projects = data;
-    });
+    $scope.skillsLoading = true;
     barkerSkills.success(function(data) {
       $scope.skills = data;
+      $scope.skillsLoading = false;
     });
+    $scope.projectsLoading = true;
+    barkerProjects.success(function(data) {
+      $scope.projects = data;
+      $scope.projectsLoading = false;
+    });
+
   });
