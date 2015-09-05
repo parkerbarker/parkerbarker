@@ -76,25 +76,14 @@ angular.module('parkerBarkerApp')
       url: "",
       job_title: "",
       myInterval: 3000,
-      slides: [{
-                  image: 'http://lorempixel.com/400/200/'
-                },
-                {
-                  image: 'http://lorempixel.com/400/200/food'
-                },
-                {
-                  image: 'http://lorempixel.com/400/200/sports'
-                },
-                {
-                  image: 'http://lorempixel.com/400/200/people'
-                }]
+      slides: []
     };
 
-    $scope.updateModal = function(obj){
-      $scope.modal.title = obj.title;
-      $scope.modal.description = obj.description;
-      $scope.modal.url = obj.url;
-      $scope.modal.job_title = obj.job_title;
-
-    };
+    // $scope.updateModal = function(obj){
+    //   $scope.modal.title = obj.title;
+    //   $scope.modal.description = obj.description;
+    //   $scope.modal.url = obj.url;
+    //   $scope.modal.job_title = obj.job_title;
+    //   // $scope.modal.slides = obj.images;
+    // };
   });
