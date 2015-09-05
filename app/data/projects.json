@@ -1,11 +1,23 @@
 [
    {
+      "id":35,
+      "title":"mFlyer",
+      "url":"http://www.mflyer.me",
+      "description":"",
+      "job_title":"Development",
+      "position":2,
+      "created_at":"2014-10-24T21:54:05Z",
+      "video":"",
+      "images":[],
+      "poster":"http://parkerbarker.s3.amazonaws.com/images/mflyer.jpg"
+   },
+   {
       "id":34,
-      "title":"Fohrcard v3",
+      "title":"Fohrcard",
       "url":"http://fohrcard.com",
       "description":"- Leads and manages overall website development of Fohrcard.com  \r\n- Maintains Fohr Card Directory to over 3K blogs, reaching 120mm uniques/mo, delivering 5.2 trillion impressions a month  \r\n-Introduced Messaging Platform connecting bloggers to brands ",
       "job_title":"Development",
-      "position":6,
+      "position":1,
       "created_at":"2014-10-24T21:54:05Z",
       "video":"",
       "images":[
@@ -683,7 +695,7 @@
    {
       "id":11,
       "title":"Rolling Stone X MilkMade X Coachella",
-      "url":"",
+      "url":"http://mi.lk/?s=coachella+2013",
       "description":"Produced the partnership of Rolling Stone Magazine and Milk to cover the 6 day/2 weekend music festival Coachella, and host a massive pool party Dj’d by Thom Yorke.  Organized and implemented a team of 10 photographers, 3 videographers, and 3 writers producing content for www.rollingstone.com and www.milkmade.com",
       "job_title":"Production",
       "position":22,

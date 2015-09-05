@@ -1,0 +1,48 @@
+{
+  "languages": [
+    "Ruby",
+    "Swift",
+    "Javascript",
+    "Jquery",
+    "Sass",
+    "Haml"
+  ],
+  "frameworks": [
+    "Ruby on Rails",
+    "iOS",
+    "Shopify",
+    "Bootstrap",
+    "Materialize"
+  ],
+  "databases": [
+    "Postgres",
+    "Redis",
+    "ElasticSearch",
+    "Solr"
+  ],
+  "learning": [
+    "Coffeescript",
+    "Node",
+    "Express.js",
+    "Angular",
+    "Monogoid",
+    "Python",
+    "Go"
+  ],
+  "applications": [
+    "Unity3D",
+    "Photoshop",
+    "Atom"
+  ],
+  "education": [
+    "University of Utah BS 2010"
+  ],
+  "meetups": [
+    "NY.rb"
+  ],
+  "interests": [
+    "Family", "Films", "Wood Working", "Robots", "Reading"
+  ],
+  "mission": "Be Somebody",
+  "personal_goals": "Positive, Patient, Persistant"
+}
