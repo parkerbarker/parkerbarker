@@ -7,7 +7,7 @@
     "Sass",
     "Haml",
     "JSX,
-    "CoffeeScript",
+    "CoffeeScript"
   ],
   "frameworks": [
     "Ruby on Rails",
