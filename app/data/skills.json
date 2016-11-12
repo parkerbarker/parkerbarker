@@ -5,11 +5,15 @@
     "Javascript",
     "Jquery",
     "Sass",
-    "Haml"
+    "Haml",
+    "JSX,
+    "CoffeeScript",
   ],
   "frameworks": [
     "Ruby on Rails",
     "iOS",
+    "React",
+    "React Native",
     "Shopify",
     "Bootstrap",
     "Materialize"
@@ -21,12 +25,7 @@
     "Solr"
   ],
   "learning": [
-    "Coffeescript",
-    "Node",
-    "Express.js",
-    "Angular",
-    "Monogoid",
-    "Python",
+    "Monogodb",
     "Go"
   ],
   "applications": [
